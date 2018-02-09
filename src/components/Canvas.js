@@ -1,4 +1,6 @@
 import React from 'react';
+import Sky from './Sky';
+import Ground from './Ground';
 
 const Canvas = () => {
   /**
@@ -19,7 +21,9 @@ const Canvas = () => {
       preserveAspectRatio="xMaxYMax none" // force uniform scaling of canvas and its element
       viewBox={viewBox}
     >
+      <Sky />
       <circle cx={0} cy={0} r={50} />
+      <Ground />
     </svg>
   );
 };
