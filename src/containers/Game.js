@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { moveObjects } from '../actions/index';
+import { moveObjects } from '../redux/actions';
 import App from '../App';
 
 const mapStateToProps = state => ({

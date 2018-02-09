@@ -1,4 +1,4 @@
-import { calculateAngle } from '../utils/formulas';
+import { calculateAngle } from '../../utils/formulas';
 
 function moveObjects(state, action) {
   if (!action.mousePosition) return state;
