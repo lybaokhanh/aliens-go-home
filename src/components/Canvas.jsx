@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Sky from './Sky';
 import Ground from './Ground';
 import Cannon from './Cannon';
+import CannonBall from './CannonBall';
 
 const Canvas = props => {
   /**
@@ -28,6 +29,7 @@ const Canvas = props => {
       <Sky />
       <Ground />
       <Cannon angle={props.angle} />
+      <CannonBall position={{ x: 0, y: -100 }} />
     </svg>
   );
 };
