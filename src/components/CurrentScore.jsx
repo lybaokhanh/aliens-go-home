@@ -9,7 +9,6 @@ const CurrentScore = props => {
   };
 
   return (
-    {/* SVG Drop Shadows */}
     <g filter="url(#shadow)">
       <text style={scoreStyle} x="300" y="80">
         {props.score}

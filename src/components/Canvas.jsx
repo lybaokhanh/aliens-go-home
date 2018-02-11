@@ -5,6 +5,7 @@ import Ground from './Ground';
 import Cannon from './Cannon';
 import CannonBall from './CannonBall';
 import CurrentScore from './CurrentScore';
+import FlyingObject from './FlyingObject';
 
 const Canvas = props => {
   /**
@@ -27,7 +28,6 @@ const Canvas = props => {
       onMouseMove={props.trackMouse}
       viewBox={viewBox}
     >
-      {/* SVG Drop Shadows */}
       <defs>
         <filter id="shadow">
           <feDropShadow dx="1" dy="1" stdDeviation="2" />
@@ -38,6 +38,8 @@ const Canvas = props => {
       <Cannon angle={props.angle} />
       <CannonBall position={{ x: 0, y: -100 }} />
       <CurrentScore score={15} />
+      <FlyingObject position={{ x: -150, y: -300 }} />
+      <FlyingObject position={{ x: 150, y: -300 }} />
     </svg>
   );
 };
