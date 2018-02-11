@@ -6,6 +6,7 @@ import Cannon from './Cannon';
 import CannonBall from './CannonBall';
 import CurrentScore from './CurrentScore';
 import FlyingObject from './FlyingObject';
+import Heart from './Heart';
 
 const Canvas = props => {
   /**
@@ -40,6 +41,7 @@ const Canvas = props => {
       <CurrentScore score={15} />
       <FlyingObject position={{ x: -150, y: -300 }} />
       <FlyingObject position={{ x: 150, y: -300 }} />
+      <Heart position={{ x: -300, y: 35 }} />
     </svg>
   );
 };
