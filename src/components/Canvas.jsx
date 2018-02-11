@@ -16,11 +16,12 @@ const Canvas = props => {
    * - min-y: the uppermost point of canvas
    * - width and height
    */
+  const gameHeight = 1200;
   const viewBox = [
     window.innerWidth / -2,
-    100 - window.innerHeight,
+    100 - gameHeight,
     window.innerWidth,
-    window.innerHeight,
+    gameHeight,
   ];
 
   return (
